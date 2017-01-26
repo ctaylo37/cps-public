@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-right);
+      }
+
+      .cls-2 {
+        fill: #0098e7;
+      }
+    </style>
+    <clipPath id="clip-right">
+      <rect width="12" height="12"/>
+    </clipPath>
+  </defs>
+  <g id="right" class="cls-1">
+    <path id="ic_chevron_right_36_px" data-name="ic chevron right 36 px" class="cls-2" d="M14.2,9,12.88,10.315l4.269,4.269L12.88,18.853,14.2,20.169l5.584-5.584Z" transform="translate(-9.881 -8.584)"/>
+  </g>
+</svg>

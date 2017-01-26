@@ -1,0 +1,43 @@
+#page-kafka{
+
+		#hero-kafka{
+		background-image: url('../img/messaging.png');
+
+		@media only screen and (min-width: 1280px) {
+	    background-image: url('../img/messaging@2x.png');
+		}
+	}
+}
+
+ul.checklist{
+	list-style-image: url('../img/check.svg');
+	font-size: 30px;
+	
+	span{
+		font-size: 1rem;
+	}
+}
+
+ul.icon-feature{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+
+	li{
+		float: left;
+		margin-bottom: 24px;
+
+		i{
+			color: $light-blue;
+			font-size: 36px;
+			width: 40px;
+			display: inline-block;
+			float: left;
+		}
+
+		span{
+			dispaly: inline-block;
+			line-height: 40px;
+		}
+
+	}
+}

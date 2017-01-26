@@ -1,0 +1,14 @@
+#page-contact{
+
+	#hero-contact{
+		background-image: url('../img/contact.png');
+
+		@media only screen and (min-width: 1280px) {
+	    background-image: url('../img/contact@2x.png');
+		}
+	}
+
+	label{
+		margin: 16px 0 4px 0;
+	}
+}

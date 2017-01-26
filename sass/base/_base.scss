@@ -1,0 +1,46 @@
+html {
+  font-size: 16px;
+}
+
+// Font scaling for different screen sizes
+@media (max-width: 400px) {
+  html { font-size: 14px; }
+}
+
+@media (max-width: 900px) {
+  html { font-size: 16px; }
+}
+
+@media(min-width: 1280px){
+  html {font-size: 18px;}
+}
+
+body{
+  font-size: 1rem;
+  background-color: $paper;
+  position: relative;
+}
+
+.row{
+  margin: 0!important;
+}
+
+a{
+  transition: background-color 0.4s ease-in-out;
+  color: $light-blue;
+
+  &:hover{
+    text-decoration: none;
+    color: darken($light-blue, 10%);
+  }
+}
+
+.content{
+  margin-bottom: 48px;
+}
+
+@media(max-width: 990px){
+  .col-md-4, .col-md-6, .col-md-8, .col-md-12{
+    margin-bottom: 18px;
+  }
+}

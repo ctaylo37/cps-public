@@ -1,0 +1,71 @@
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+//Vendors
+@import "vendors/bootstrap/bootstrap";
+
+//Utils
+@import "utils/variables";
+@import "utils/quick-classes";
+
+//Base
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+@import "base/header";
+@import "base/footer";
+
+//Animations
+@import "animations/animations";
+
+//Components
+@import "components/buttons";
+@import "components/inputs";
+@import "components/sidebar";
+@import "components/cards";
+@import "components/product-list";
+
+//Pages
+@import "pages/home";
+@import "pages/services";
+@import "pages/contact";
+@import "pages/detail";
+
+//Icons
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

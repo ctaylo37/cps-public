@@ -1,0 +1,55 @@
+#page-services{
+	
+	#hero-services{
+		background-image: url('../img/services.png');
+
+		@media only screen and (min-width: 1280px) {
+	    background-image: url('../img/services@2x.png');
+		}
+	}
+
+	.content{
+		margin-top: 16px;
+
+		ul{
+			list-style-type: none;
+		}
+	}
+
+	.fixed {
+		position: fixed; 
+		top: 0;  
+		z-index: 1;
+	}
+
+	#quick-navigation{
+		ul{
+			li{
+				a{
+					color: $grey-4;
+					border-radius: 0;
+					border-bottom: solid 1px $grey-1;
+
+					&:hover{
+						background-color: transparent;
+						color: $light-blue;
+					}
+				}
+
+				&.active a{
+					color: $light-blue;
+					background-color: transparent;
+					position: relative;
+
+					&::after{
+						content: url('../img/right.svg');
+						position: absolute;
+						right: 0px;
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+		}
+	}
+}

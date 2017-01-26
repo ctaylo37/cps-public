@@ -1,0 +1,45 @@
+// Light UI Components
+.light-ui{
+
+	.form-control{
+		height: 26px;
+		padding: 2px 4px;
+		border-color: $border;
+	}
+
+	.search-input-group{
+		width: 200px;
+		position: relative;
+		display: inline-block;
+
+		span{
+			position: absolute;
+			z-index: 20;
+			width: 32px;
+			height: 32px;
+			padding: 4px;
+
+			i{
+				color: $black-54;
+			}
+		}
+
+		input{
+			position: relative;
+			z-index: 10;
+			padding-left: 32px;
+			width: 168px;
+		}
+	}
+
+	.custom-time-inputs{
+		position: relative;
+		display: inline-block;
+		width: 485px;
+
+		input{
+			display: inline-block;
+			width: 235px;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.btn{
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.btn-primary{
+	color: $paper;
+	background: $light-blue;
+	border: solid 1px $light-blue;
+
+	&:hover, &:focus{
+		color: $paper;
+		background: darken($light-blue, 8%);
+		border: solid 1px darken($light-blue, 8%);
+	}
+}
+
+.btn-secondary{
+	color: $grey-3;
+	background: $paper;
+	border: solid 1px $border;
+
+	&:hover, &:focus{
+		background: $grey-1;
+		color: $grey-3;
+		border: solid 1px $border;
+	}
+}

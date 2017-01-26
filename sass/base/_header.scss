@@ -1,0 +1,150 @@
+.hero{
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.primary-nav{
+		border-bottom: solid 1px rgba(255, 255, 255, .2);
+		height: 50px;
+
+		.logo{
+			display: inline-block;
+			line-height: 50px;
+
+			span{
+				color: $paper;
+				font-size: 16px;
+				font-weight: 400;
+				padding-left: 8px;
+				font-style: italic;
+			}
+		}
+
+		#navigation{
+			display: inline-block;
+			list-style-type: none;
+			margin-left: 40px;
+
+			li{
+				display: inline-block;
+				padding-right: 8px;
+				
+				a{
+					font-weight: 300;
+					font-size: 1rem;
+					color: $paper-54;
+					line-height: 49px;
+					display: inline-block;
+					padding: 0;
+					background: transparent;
+					border-radius: 0;
+					margin: 0 4px;
+
+					&:hover, &:focus{
+						color: $paper;
+						text-decoration: none;
+						// background: rgba(255, 255, 255, .2);
+					}
+				}
+
+				&.active a{
+					// background: rgba(255, 255, 255, .3);
+					color: $paper;
+					border-bottom: solid 1px $paper;
+				}
+			}
+		}
+
+		#search{
+			display: inline-block;
+			float: right;
+			width: 240px;
+			position: relative;
+
+			input{
+				position: relative;
+				background-color: rgba(255, 255, 255, .3);
+				border-radius: 3px;
+				border: none;
+				margin: 7px 0;
+				padding-left: 36px;
+				color: $paper;
+				font-weight: 300;
+
+				&::-webkit-input-placeholder { /* Chrome */
+				  color: rgba(255, 255, 255, .8);
+				  font-weight: 300;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+				  color: rgba(255, 255, 255, .8);
+				  font-weight: 300;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+				  color: rgba(255, 255, 255, .8);
+				  font-weight: 300;
+				  opacity: 1;
+				}
+				&:-moz-placeholder { /* Firefox 4 - 18 */
+				  color: rgba(255, 255, 255, .8);
+				  font-weight: 300;
+				  opacity: 1;
+				}
+			}
+
+			i{
+				position: absolute;
+				top: 12px;
+				left: 8px;
+			}
+		}
+	}
+
+	@media(max-width: 768px){
+		.primary-nav{
+			height: auto;
+
+			#navigation{
+				display: none;
+		    margin: 0;
+
+		    li{
+		    	display: block;
+		    }
+
+		    &.show{
+		    	display: block;
+		    }
+			}
+
+			#search{
+				width: 100%;
+				display: none;
+
+				&.show{
+		    	display: block;
+		    }
+			}
+		}
+	}
+
+	.message{
+		padding: 60px 0;
+	}
+
+	// Responsive
+
+	.mobile-menu, .mobile-search{
+		color: rgba(255, 255, 255, .8);
+		padding:8px;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+
+		&:hover{
+			color: paper;
+		}
+	}
+}

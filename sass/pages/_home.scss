@@ -1,0 +1,11 @@
+#page-why{
+
+	#hero-why{
+		background-image: url('../img/principles.png');
+
+		@media only screen and (min-width: 1280px) {
+	    background-image: url('../img/principles@2x.png');
+		}
+	}
+
+}

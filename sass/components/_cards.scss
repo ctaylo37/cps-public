@@ -1,0 +1,36 @@
+.card{
+	border: solid 1px $grey-1;
+	border-radius: 3px;
+	text-align: center;
+	padding: 24px 16px;
+
+	img{
+		margin: 0 auto;
+	}
+
+	&:hover{
+		background-color: $grey-1;
+	}
+}
+
+#availability{
+	.card{
+		border: none;
+		background: $paper-24;
+		padding: 16px;
+		text-align: left;
+
+		label{
+			text-transform: uppercase;
+			color: $paper-74;
+		}
+
+		h1, small{
+			color: $orange;
+
+			& small{
+				font-weight: 300;
+			}
+		}
+	}
+}
