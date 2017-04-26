@@ -1,1 +1,1 @@
-# cps-public
+# cps-portal

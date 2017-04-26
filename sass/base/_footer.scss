@@ -1,41 +1,8 @@
 footer{
-	background-color: $grey-4;
+	background-color: #F3F3F3;
 	padding: 24px 0;
-	color: $paper;
 	font-size: 16px;
 	font-weight: 300;
-
-	.logo{
-		img{
-			display: inline-block;
-			float: left;
-		}
-
-		span{
-			display: inline-block;
-			line-height: 1;
-			padding-left: 8px;
-			font-style: italic;
-		}
-	}
-
-
-	ul{
-		list-style-type: none;
-		-webkit-padding-start: 0;
-
-		li{
-			a{
-				color: $paper;
-				font-weight: 300;
-
-				&:hover{
-					color: $light-blue;
-					text-decoration: none;
-				}
-			}
-		}
-	}
 
 	@media (max-width: 990px){
 		text-align: center;

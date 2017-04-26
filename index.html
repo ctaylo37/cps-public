@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Why CPS | Core Platform Services</title>
+	<title>Services | Core Platform Services</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="stylesheets/main.css" rel="stylesheet">
@@ -11,30 +11,30 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
-<body id="page-why">
+<body id="page-services" data-spy="scroll" data-target="#quick-navigation">
 
-	<header id="hero-why" class="row hero">
+	<header id="hero-services" class="row hero">
 		<div class="row primary-nav">
 			<div class="container">
 				<div class="logo">
-					<img src="img/paypal-logo-white.svg" width="18" height="22"><span>CPS</span>
+					<a href="index.html"><img src="img/logo.svg" width="129" height="25"></a>
 				</div>
 
-				<div class="pad-8 pull-right hidden-md hidden-lg hidden-xl">
+				<div class="pull-right hidden-lg hidden-xl">
 					<a id="toggle-mobile" href="#">
 					  <i class="material-icons">menu</i>
 					</a>
 				</div>
 				
 				<ul id="navigation">
-					<li class="active"><a href="index.html">Why CPS</a></li>
-					<li ><a href="services.html">Products & Services</a></li>
+					<li class="active" ><a href="index.html">Products & Services</a></li>
+					<li><a href="solutions.html">Solutions</a></li>
+					<li><a href="sdlc.html">SDLC</a></li>
 					<li ><a href="contact.html">Contact</a></li>
 				</ul>
 
 				<div id="search">
-					<input type="text" class="form-control" name="search" placeholder="search">
-					<i class="material-icons">search</i>
+					<input type="text" class="form-control" name="search" placeholder="Search...">
 				</div>
 
 			</div>
@@ -42,91 +42,397 @@
 		<div class="row message">
 			<div class="container">
 				<div class="col-md-8">
-					<h1 class="light">Core Platform Services</h1>
-					<p class="light">CPS Provides a robust portfolio of core platform capabilities, delivered  as a service and built to scale .</p>
+					<h1 class="light">New Product Announcement</h1>
+					<p class="lead light">We are very excited to announce that we have realeased <strong>Juno</strong>, a cloud and micro service friendly fast data store leveraging pluggable state of the art storage technology.</p>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<div class="container content">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Our Core Principles</h2>
+		<div class="col-md-3 hidden-xs hidden-sm">
+			<div id="quick-navigation" class="row">
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#category-compute">Compute</a></li>
+					<li><a href="#category-storage-database">Storage & Database</a></li>
+					<li><a href="#category-networking">Networking</a></li>
+					<li><a href="#category-developer">Developer Tools</a></li>
+					<li><a href="#category-collaboration">Collaboration Tools</a></li>
+					<li><a href="#category-information-security">Information Security</a></li>
+					<li><a href="#category-monitoring-management">Monitoring & Management</a></li>
+					<li><a href="#category-messaging-streaming">Messaging & Streaming</a></li>
+					<li><a href="#category-application-services">Application Services</a></li>
+					<li><a href="#category-analytics-intelligence">Analytics & Intelligence</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="product-list" class="col-md-6">
+			
+			<div id="category-compute" class="row">
+				<h2>Compute</h2>
 				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">storage</i>
+							<div>
+								<h3>C3</h3>
+								<p>OpenStack cloud compute</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">storage</i>
+							<div>
+								<h3>Docker</h3>
+								<p>Software container platform</p>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</div>
+
+			<div id="category-storage-database" class="row">
+				<h2>Storage & Database</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>Solidfire</h3>
+								<p>High performance network attached storage</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>Oracle</h3>
+								<p>Distributed cloud relational database system</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>Couchbase</h3>
+								<p>High performance NoSQL database</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>Juno</h3>
+								<p>Fast, cloud and micro service friendly data store</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>Mayfly</h3>
+								<p>In memory distributed key-value store</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">sd_storage</i>
+							<div>
+								<h3>OCC</h3>
+								<p>High reliable Oracle database gateway</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-networking" class="row">
+				<h2>Networking</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">network_wifi</i>
+							<div>
+								<h3>Slingshot</h3>
+								<p>Route traffic based on deep inspection of HTTP requests</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">network_wifi</i>
+							<div>
+								<h3>Load Balancer</h3>
+								<p>Distribute network traffic across multiple servers</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-developer" class="row">
+				<h2>Development Platform</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">code</i>
+							<div>
+								<h3>Altus</h3>
+								<p>Application Lifecycle Management, for creating, managing and deploying application to production</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">code</i>
+							<div>
+								<h3>Raptor</h3>
+								<p>PayPal's fully operationalized, business-critical Java Framework</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-collaboration" class="row">
+				<h2>Productivity Tools</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">build</i>
+							<div>
+								<h3>GitHub</h3>
+								<p>Collaborative souce code management</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">build</i>
+							<div>
+								<h3>JIRA</h3>
+								<p>Issue tracking system</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-information-security" class="row">
+				<h2>Identity & Security</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">security</i>
+							<div>
+								<h3>Fortify</h3>
+								<p>Application security scanning system</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">security</i>
+							<div>
+								<h3>Keymaker</h3>
+								<p>Centralized key management system</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-monitoring-management" class="row">
+				<h2>Monitoring & Management</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">timeline</i>
+							<div>
+								<h3>Sherlock</h3>
+								<p>Unified application monitoring system</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">timeline</i>
+							<div>
+								<h3>Turbo Roller</h3>
+								<p>Application deployment tool</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-messaging-streaming" class="row">
+				<h2>Messaging & Streaming</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">message</i>
+							<div>
+								<h3>ADR</h3>
+								<p>Apache open source high-performance, lightweight AMQP 1.0 message router</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">message</i>
+							<div>
+								<h3>AMQ</h3>
+								<p>Database based messaging system developed in PayPal with transaction support</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="kafka.html">
+							<i class="material-icons">message</i>
+							<div>
+								<span class="badge">New Release</span>
+								<h3>Kafka</h3>
+								<p>High throughput distibuted messaging pipeline</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">message</i>
+							<div>
+								<h3>YAM</h3>
+								<p>Low latency messaging pipeline on top of ActiveMQ</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-application-services" class="row">
+				<h2>Application Services</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">power</i>
+							<div>
+								<h3>Mediaserv</h3>
+								<p>Media delivery service</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">power</i>
+							<div>
+								<h3>Notification</h3>
+								<p>Unified notification platform</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">power</i>
+							<div>
+								<h3>Searchserv</h3>
+								<p>Scalable elastic search service</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-big-data" class="row">
+				<h2>Big Data</h2>
+				<hr>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">cloud</i>
+							<div>
+								<h3>Hadoop</h3>
+								<p>Big data distibuted batch compute platform</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">cloud</i>
+							<div>
+								<h3>Spark</h3>
+								<p>Big data streaming processing engine</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="category-analytics-intelligence" class="row">
+				<h2>Analytics & Intelligence</h2>
+				<hr>
+				
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">insert_chart</i>
+							<div>
+								<h3>Tableau</h3>
+								<p>Business inteligence and visualization platform</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">insert_chart</i>
+							<div>
+								<span class="badge">New Release</span>
+								<h3>Experimentation</h3>
+								<p>Platform for managing and running experimentation</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">insert_chart</i>
+							<div>
+								<h3>Tracking</h3>
+								<p>User behaviour tracking and reporting</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
-		
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/ilities.svg" width="50" height="50">
-					<h3>Build for *ilities</h3>
-					<p>Services are built for availability, resiliency, redundancy, durability, and scalability.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/service.svg" width="50" height="50">
-					<h3>Service oriented</h3>
-					<p>Services are CPU and memory efficient, multitenant, with suitable access controls.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/simplicity.svg" width="50" height="50">
-					<h3>Strive for simplicity</h3>
-					<p>Services use supported frameworks, focus on clean simple maintainable design.</p>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/quality.svg" width="50" height="50">
-					<h3>Quality at every step</h3>
-					<p>Quality is supported through automated testing and deployment infrastructure.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/self-service.svg" width="50" height="50">
-					<h3>Self service approach</h3>
-					<p>Self-service onboarding is supported to improve time to market of new projects.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/automated.svg" width="50" height="50">
-					<h3>Automation</h3>
-					<p>Efficiency through automated provisioning and deployment.</p>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/elastic.svg" width="50" height="50">
-					<h3>Elastic & resilient</h3>
-					<p>Services are cloud ready and easily scalable to meet demand.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/truth.svg" width="50" height="50">
-					<h3>Single source of truth</h3>
-					<p>Central service registry and consistent documentation across all services.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img src="img/icons/instrumented.svg" width="50" height="50">
-					<h3>Visible & instrumented</h3>
-					<p>KPIs are monitored, performance is profiled, and logs are accessible.</p>
-				</div>
-			</div>
+		<div id="popular" class="col-md-3 hidden-xs hidden-sm">
+			<div class="row">
+				<h2>Popular</h2>
+				<hr>
+			    <ul class="unstyled">
+			    		<li><a href="#">OCC</a></li>
+					<li><a href="#">Sherlock</a></li>
+				        <li><a href="#">Mayfly</a></li>
+				        <li><a href="kafka.html">Kafka</a></li>
+					<li><a href="#">Tracking</a></li>
+					<li><a href="#">Experimentation</a></li>
+					<li><a href="#">Notification</a></li>
+				</ul>
+		  	</div>
 		</div>
 	</div>
 
@@ -134,21 +440,22 @@
 		<div class="container">
 			<div class="col-md-4">
 				<div class="logo">
-					<img src="img/paypal-logo-white.svg" width="52" height="44"><span>Core<br>Platform<br>Services</span>
+					<img src="img/logo.svg" width="129" height="25">
 				</div>
 			</div>
 			<div class="col-md-4">
-				<ul>
-					<li><a href="index.html">Why CPS</a></li>
-					<li><a href="services.html">Services</a></li>
+				<ul class="unstyled">
+					<li><a href="index.html">Products & Services</a></li>
+					<li><a href="solutions.html">Solutions</a></li>
+					<li><a href="sdlc.html">SDLC</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
-				<ul>
-					<li><a href="#">Customers</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="#">Newsletter</a></li>
+				<ul class="unstyled">
+					<li><a href="#">External Link</a></li>
+					<li><a href="#">External Link</a></li>
+					<li><a href="#">External Link</a></li>
 				</ul>
 			</div>
 		</div>
@@ -157,6 +464,20 @@
 	<script type="text/javascript">
 		$("#toggle-mobile").click(function(){
 		    $("#navigation, #search").toggleClass("show");
+		});
+	</script>
+
+	<script type="text/javascript">
+		var quicknav = $("#quick-navigation");
+		  $(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+		    var hero = $('.hero').outerHeight(true);
+
+	       	if (scroll >= hero) {
+	          quicknav.addClass("fixed");
+	        } else {
+	          quicknav.removeClass("fixed");
+	        }
 		});
 	</script>
 

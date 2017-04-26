@@ -22,15 +22,15 @@
 //Components
 @import "components/buttons";
 @import "components/inputs";
-@import "components/sidebar";
 @import "components/cards";
-@import "components/product-list";
+@import "components/lists";
 
 //Pages
-@import "pages/home";
 @import "pages/services";
 @import "pages/contact";
 @import "pages/detail";
+@import "pages/sdlc";
+@import "pages/heros";
 
 //Icons
 @font-face {

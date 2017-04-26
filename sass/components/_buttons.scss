@@ -1,7 +1,6 @@
 .btn{
 	text-align: center;
 	border-radius: 3px;
-	font-weight: 300;
 	font-size: 1rem;
 }
 
@@ -9,6 +8,7 @@
 	color: $paper;
 	background: $light-blue;
 	border: solid 1px $light-blue;
+	border-radius: 24px;
 
 	&:hover, &:focus{
 		color: $paper;
@@ -18,13 +18,14 @@
 }
 
 .btn-secondary{
-	color: $grey-3;
-	background: $paper;
-	border: solid 1px $border;
+	color: $paper;
+	background: transparent;
+	border: solid 2px $paper;
+	border-radius: 24px;
 
 	&:hover, &:focus{
-		background: $grey-1;
-		color: $grey-3;
-		border: solid 1px $border;
+		background: rgba(255,255,255,.3);
+		color: $paper;
+		border: solid 2px $paper;
 	}
 }
