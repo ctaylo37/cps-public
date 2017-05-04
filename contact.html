@@ -16,25 +16,31 @@
 	<header id="hero-contact" class="row hero">
 		<div class="row primary-nav">
 			<div class="container">
-				<div class="logo">
-					<a href="index.html"><img src="img/logo.svg" width="129" height="25"></a>
-				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<a id="logo" href="index.html"><img src="img/logo.svg" width="129" height="25"></a>
+					</div>
+					<div class="col-lg-5 hidden-xs hidden-sm hidden-md">
+						<ul id="navigation">
+							<li><a href="index.html">Products & Services</a></li>
+							<li><a href="#">My Tickets</a></li>
+							<li class="active"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-8 col-md-10 col-lg-5 text-right">
+						<div class="pull-right hidden-lg hidden-xl">
+							<a id="toggle-mobile" href="#">
+							  <i class="material-icons">menu</i>
+							</a>
+						</div>
 
-				<div class="pull-right hidden-lg hidden-xl">
-					<a id="toggle-mobile" href="#">
-					  <i class="material-icons">menu</i>
-					</a>
-				</div>
-				
-				<ul id="navigation">
-					<li><a href="index.html">Products & Services</a></li>
-					<li><a href="solutions.html">Solutions</a></li>
-					<li><a href="sdlc.html">SDLC</a></li>
-					<li class="active"><a href="contact.html">Contact</a></li>
-				</ul>
+						<a id="report-issue" class="btn btn-primary hidden-xs" href="#">Report Issue</a>
 
-				<div id="search">
-					<input type="text" class="form-control" name="search" placeholder="Search...">
+						<div id="search" class="hidden-xs">
+							<input type="text" class="form-control" name="search" placeholder="Search...">
+							<i class="material-icons">search</i>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -42,7 +48,7 @@
 		<div class="row message">
 			<div class="container">
 				<div class="col-md-8">
-					<h1 class="light">Get In Touch</h1>
+					<h1 class="display light">Get In Touch</h1>
 					<p class="lead light">Drop us a line or reach out to us on Slack.  We'd love to hear from you.</p>
 				</div>
 			</div>
@@ -106,8 +112,7 @@
 			<div class="col-md-4">
 				<ul class="unstyled">
 					<li><a href="index.html">Products & Services</a></li>
-					<li><a href="solutions.html">Solutions</a></li>
-					<li><a href="sdlc.html">SDLC</a></li>
+					<li><a href="#">My Tickets</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>

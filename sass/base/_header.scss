@@ -10,8 +10,9 @@
 		height: 54px;
 		box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
-		.logo{
-			display: inline-block;
+		#logo{
+			margin: 10px 0;
+			float: left;
 		}
 
 		#navigation{
@@ -46,21 +47,39 @@
 				}
 			}
 		}
+		#report-issue{
+	    height: 34px;
+	    font-size: 0.8rem;
+	    float: right;
+	    margin: 10px;
+		}
 
 		#search{
 			display: inline-block;
 			float: right;
 			width: 240px;
 			position: relative;
+			margin: 10px 0;
+
+			i{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 40px;
+				line-height: 34px;
+				text-align: center;
+				color: $black-54;
+			}
 
 			input{
 				position: relative;
 				background-color: #efefef;
 				border-radius: 24px;
 				border: none;
-				margin: 10px 0;
 				color: $grey-4;
 				box-shadow: none;
+				padding: 0 0 0 40px;
 
 				&::-webkit-input-placeholder { /* Chrome */
 				  color: $grey-3;
@@ -108,42 +127,53 @@
 			}
 		}
 	}
-	
-	@media(max-width: 990px){
-		.primary-nav{
-			height: auto;
 
-			.logo{
-				padding: 12px 0;
-			}
-			#navigation{
-				display: none;
-		    margin: 0;
-
-		    li{
-		    	display: block;
-		    }
-
-		    &.show{
-		    	display: block;
-		    }
-			}
-
-			#search{
-				width: 100%;
-				display: none;
-
-				&.show{
-		    	display: block;
-		    }
-			}
-		}
-
-		#toggle-mobile{
-			padding: 12px;
-			display: inline-block;
-		}
+	@media(max-width: 767px){
+		
 	}
+	
+	// @media(max-width: 990px){
+	// 	.primary-nav{
+	// 		height: auto;
+
+	// 		.logo{
+	// 			padding: 12px 0;
+	// 		}
+	// 		#navigation{
+	// 			display: none;
+	// 	    margin: 0;
+
+	// 	    li{
+	// 	    	display: block;
+	// 	    }
+
+	// 	    &.show{
+	// 	    	display: block;
+	// 	    }
+	// 		}
+	// 	}
+
+	// 	@media(max-width: 768px){
+	// 		#search, #report-issue{
+	// 			width: 100%;
+	// 			display: none;
+
+	// 			&.show{
+	// 	    	display: block;
+	// 	    }
+	// 		}
+	// 	}
+
+	#toggle-mobile{
+		padding: 12px;
+		display: inline-block;
+	}
+
+	// #toggle-mobile{
+	// 	@media(min-width:990px){
+	// 		display: none;
+	// 	}
+	// }
 
 	.message{
 		padding-bottom: 2rem;

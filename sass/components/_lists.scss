@@ -43,12 +43,22 @@ ul.unstyled{
 }
 
 ul.checklist{
-	list-style-image: url('../img/check.svg');
-	font-size: 30px;
-	line-height: 1.5;
-	
-	span{
-		font-size: 1rem;
+	list-style-type: none;
+
+	li{
+		position: relative;
+		margin-left: 12px;
+		padding: 24px 12px;
+		line-height: 1.5;
+
+		&:before{
+			content: url('../img/ic_circle_check.svg');
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: -48px;
+		}
 	}
 }
 

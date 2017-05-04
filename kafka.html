@@ -16,25 +16,31 @@
 	<header id="hero-kafka" class="row hero hero-messaging">
 		<div class="row primary-nav">
 			<div class="container">
-				<div class="logo">
-					<a href="index.html"><img src="img/logo.svg" width="129" height="25"></a>
-				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<a id="logo" href="index.html"><img src="img/logo.svg" width="129" height="25"></a>
+					</div>
+					<div class="col-lg-5 hidden-xs hidden-sm hidden-md">
+						<ul id="navigation">
+							<li><a href="index.html">Products & Services</a></li>
+							<li><a href="#">My Tickets</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-8 col-md-10 col-lg-5 text-right">
+						<div class="pull-right hidden-lg hidden-xl">
+							<a id="toggle-mobile" href="#">
+							  <i class="material-icons">menu</i>
+							</a>
+						</div>
 
-				<div class="pull-right hidden-lg hidden-xl">
-					<a id="toggle-mobile" href="#">
-					  <i class="material-icons">menu</i>
-					</a>
-				</div>
-				
-				<ul id="navigation">
-					<li><a href="index.html">Products & Services</a></li>
-					<li><a href="solutions.html">Solutions</a></li>
-					<li><a href="sdlc.html">SDLC</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+						<a id="report-issue" class="btn btn-primary hidden-xs" href="#">Report Issue</a>
 
-				<div id="search">
-					<input type="text" class="form-control" name="search" placeholder="Search...">
+						<div id="search" class="hidden-xs">
+							<input type="text" class="form-control" name="search" placeholder="Search...">
+							<i class="material-icons">search</i>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -42,19 +48,21 @@
 
 		<div class="row breadcrumbs">
 			<div class="container">
+				<div class="col-md-12">
 					<ul class="breadcrumbs-list">
-					<li><a href="index.html">Services</a></li>
-					<li><a href="index.html#category-messaging">Messaging</a></li>
-					<li>Kafka</li>
-				</ul>
+						<li><a href="index.html">Services</a></li>
+						<li><a href="index.html#category-messaging">Messaging</a></li>
+						<li>Kafka</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<div class="row message">
 			<div class="container">
-				<div class="col-md-8">
-					<h1 class="light">Kafka</h1>
-					<p class="lead light">Apache open source distributed publish-subscribe messaging and streaming pipeline for handling real-time data feeds. Kafka is suitable for applications needing high throughput messaging pipeline.</p>
+				<div class="col-lg-10">
+					<h1 class="display light">Kafka</h1>
+					<p class="lead light">Apache Kafka is a high throughput, distributed, scalable, pub-sub (publisher-subscriber) messaging system. Kafka is particularly suitable for use cases including batch and continuous streaming of data. It focusses on high throughput rather than low latency.</p>
 					<br>
 					<a class="btn btn-lg btn-secondary" data-toggle="modal" href="#modal-getting-started">Getting Started</a>
 				</div>
@@ -69,7 +77,6 @@
 				  <li role="presentation"><a href="#">Documentation</a></li>
 				  <li role="presentation"><a href="#">How To Guide</a></li>
 				  <li role="presentation"><a href="#">Support</a></li>
-				  <li role="presentation"><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -82,133 +89,122 @@
 			<div class="col-md-9">
 				
 				<div class="row">
-					<h2>Key Benefits</h2>
+					<h1>Primary Use Cases</h1>
 					<hr>
 					<ul class="checklist">
-						<li><span>High throughput and horizontally scalable (via sharding and distributed consumption).</span></li>
-						<li><span>Supports both single-queue and publisher/subscriber (multiple listeners) models.</span></li>
-						<li><span>Intra cluster replication for fault-tolerance.</span></li>
+						<li>User activity and behavioral tracking – user activity data is streamed efficiently and effectively to Hadoop for deep analytics and elastic search for visualization and insights.</li>
+						<li>Log aggregation and metrics – Apache, Akamai, and application logs and metrics are streamed to Sherlock and CAL.</li>
+						<li>Partners and Merchants insights – enriched data is streamed from Hadoop to elastic search.</li>
+						<li>Anomaly and malware detection – system network events, process events, and system calls are streamed for malware detection via Cyactive Spark machine learning.</li>
+						<li>Core Data Highway – Oracle database redo logs are streamed to Hadoop for downstream consumption following the event-sourcing pattern.</li>
 					</ul>
-				</div>
-				
-				<div class="row">
-					<h2>Key Features</h2>
-					<hr>
-					<ul class="checklist">
-						<li><span>High throughput and horizontally scalable (via sharding and distributed consumption).</span></li>
-						<li><span>Supports both single-queue and publisher/subscriber (multiple listeners) models.</span></li>
-						<li><span>Intra cluster replication for fault-tolerance.</span></li>
-						<li><span>Persistent to disk for durability.</span></li>
-						<li><span>Supports replication of data across data centers.</span></li>
-						<li><span>Supports both real-time and batch consumption.</span></li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<h2>SLA</h2>
-					<hr>
-					<ul class="checklist">
-						<li><span>Availability: 99.9%</span></li>
-						<li><span>Latency: 100ms at 99th percentile</span></li>
-						<li><span>Data loss: 0.01%</span></li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<h2>Use cases</h2>
-					<hr>
-					<div class="row">
-						<div class="col-md-6">
-							<ul class="icon-feature">
-								<li>
-									<i class="material-icons">people</i>
-									<span>User Activity Tracking Pipeline</span>
-								</li>
-								<li>
-									<i class="material-icons">event_available</i>
-									<span>Event Sourcing</span>
-								</li>
-								<li>
-									<i class="material-icons">chrome_reader_mode</i>
-									<span>Log Aggregation & Metrics</span>
-								</li>
-								<li>
-									<i class="material-icons">settings</i>
-									<span>Stream Processing</span>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-6">
-							<ul class="icon-feature">
-								<li>
-									<i class="material-icons">graphic_eq</i>
-									<span>Predictive Analytics</span>
-								</li>
-								<li>
-									<i class="material-icons">account_balance</i>
-									<span>Partner & Merchant Insights</span>
-								</li>
-								<li>
-									<i class="material-icons">security</i>
-									<span>Security/Fraud Detection</span>
-								</li>
-								<li>
-									<i class="material-icons">message</i>
-									<span>Recommendation Engine</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div class="row">
-					<h2>Related Products & Services</h2>
-					<hr>
-					<ul class="product-list">
-						<li>
-							<a href="#">
-								<i class="material-icons">message</i>
-								<div>
-									<h3>ADR</h3>
-									<p>Apache open source high-performance, lightweight AMQP 1.0 message router</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="material-icons">message</i>
-								<div>
-									<h3>AMQ</h3>
-									<p>Database based messaging system developed in PayPal with transaction support</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="material-icons">message</i>
-								<div>
-									<h3>YAM</h3>
-									<p>Messaging pipeline built on top of ActiveMQ</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-					
 				</div>
 			</div>
 			
 			<!-- Sidebar -->
 			<div class="col-md-3">
+
 				<div class="row">
 					<h2>Contact Us</h2>
 					<hr>
-					<ul class="unstyled">
-						<li>Slack: <a href="https://paypal.slack.com/messages/C1745N37B">#help-kafka</a></li>
-						<li>Email: <a href="mailto:dl-pp-help-kafka@paypal.com">dl-pp-help-kafka</a></li>
-					</ul>
+					<div class="card-callout">
+						<ul class="unstyled">
+							<li>Slack: <a href="https://paypal.slack.com/messages/C1745N37B">#help-kafka</a></li>
+							<li>Email: <a href="mailto:dl-pp-help-kafka@paypal.com">dl-pp-help-kafka</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<h2>SLA</h2>
+					<hr>
+					<div class="card-callout">
+						<ul class="unstyled">
+							<li>Availability: 99.9%</li>
+							<li>Latency: 100ms at 99th percentile</li>
+							<li>Data loss: 0.01%</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Key Benefits</h1>
+				<hr>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card benefit">
+					<div class="benefit-icon"><i class="material-icons">compare_arrows</i></div>
+					<h2>High Throughput</h2>
+					<p><small>The primary benefit of Kafka is that it is a very high throughput message and streaming solution that streams a few hundreds of billions of messages per day at PayPal and trillions at LinkedIn. Kafka achieves these results using low overhead techniques such as appending messages to the end of a set of distributed partition log files.</small></p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card  benefit">
+					<div class="benefit-icon"><i class="material-icons">group_work</i></div>
+					<h2>Fault Tolerance</h2>
+					<p><small>In addition, Kafka supports intra and inter cluster replication for fault-tolerance. Within colo replication creates three copies partition logs on different nodes, whereas inter colo replication is achieved by sending copies of messages from the source cluster to the target cluster residing in another availability zone.</small></p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card  benefit">
+					<div class="benefit-icon"><i class="material-icons">textsms</i></div>
+					<h2>Messaging Patterns</h2>
+					<p><small>As a messaging system, Kafka supports both single-queue and publisher/subscriber messaging patterns. Clusters of message subscribers can read from the Kafka cluster, with work distributed across the subscribers.</small></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card  benefit">
+					<div class="benefit-icon"><i class="material-icons">restore</i></div>
+					<h2>Recoverability</h2>
+					<p><small>Partition files are persisted to disk to improve recoverability.</small></p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card  benefit">
+					<div class="benefit-icon"><i class="material-icons">clear_all</i></div>
+					<h2>Horizontally Scalable</h2>
+					<p><small>Kafka is horizontally scalable allowing clusters to grow with volume and provide hardware redundancy for improved availability.</small></p>
+				</div>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Related Products & Services</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<i class="material-icons">message</i>
+							<div>
+								<h3>AMQ</h3>
+								<p>Database based messaging system developed in PayPal with transaction support</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">message</i>
+							<div>
+								<h3>YAM</h3>
+								<p>Messaging pipeline built on top of ActiveMQ</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
@@ -222,8 +218,7 @@
 			<div class="col-md-4">
 				<ul class="unstyled">
 					<li><a href="index.html">Products & Services</a></li>
-					<li><a href="solutions.html">Solutions</a></li>
-					<li><a href="sdlc.html">SDLC</a></li>
+					<li><a href="#">My Tickets</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
