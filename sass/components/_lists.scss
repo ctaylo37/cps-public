@@ -10,16 +10,11 @@
 			background-color: $grey-1;
 		}
 
-		i{
-			background-color: $light-blue;
-			color: $paper;
+		.category-icon{
 			width: 60px;
 			height: 60px;
-			border-radius: 12px;
 			display: inline-block;
 			float: left;
-			text-align: center;
-			line-height: 60px;
 		}
 
 		div{

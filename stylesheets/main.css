@@ -10782,30 +10782,25 @@ stretchRight
   background-color: #efefef;
 }
 /* line 13, ../sass/components/_lists.scss */
-.product-list li i {
-  background-color: #009CDE;
-  color: #ffffff;
+.product-list li .category-icon {
   width: 60px;
   height: 60px;
-  border-radius: 12px;
   display: inline-block;
   float: left;
-  text-align: center;
-  line-height: 60px;
 }
-/* line 25, ../sass/components/_lists.scss */
+/* line 20, ../sass/components/_lists.scss */
 .product-list li div {
   display: inline-block;
   width: calc(100% - 80px);
   margin-left: 8px;
 }
-/* line 30, ../sass/components/_lists.scss */
+/* line 25, ../sass/components/_lists.scss */
 .product-list li div h3 {
   margin: 0 0 4px 0;
   dispaly: inline-block !important;
 }
 
-/* line 38, ../sass/components/_lists.scss */
+/* line 33, ../sass/components/_lists.scss */
 ul.unstyled {
   list-style-type: none;
   -webkit-padding-start: 0;
@@ -10813,18 +10808,18 @@ ul.unstyled {
   font-weight: 400;
 }
 
-/* line 45, ../sass/components/_lists.scss */
+/* line 40, ../sass/components/_lists.scss */
 ul.checklist {
   list-style-type: none;
 }
-/* line 48, ../sass/components/_lists.scss */
+/* line 43, ../sass/components/_lists.scss */
 ul.checklist li {
   position: relative;
   margin-left: 12px;
   padding: 24px 12px;
   line-height: 1.5;
 }
-/* line 54, ../sass/components/_lists.scss */
+/* line 49, ../sass/components/_lists.scss */
 ul.checklist li:before {
   content: url("../img/ic_circle_check.svg");
   display: inline-block;
@@ -10834,17 +10829,17 @@ ul.checklist li:before {
   left: -48px;
 }
 
-/* line 65, ../sass/components/_lists.scss */
+/* line 60, ../sass/components/_lists.scss */
 ul.icon-feature {
   list-style-type: none;
   -webkit-padding-start: 0;
 }
-/* line 69, ../sass/components/_lists.scss */
+/* line 64, ../sass/components/_lists.scss */
 ul.icon-feature li {
   float: left;
   margin-bottom: 24px;
 }
-/* line 73, ../sass/components/_lists.scss */
+/* line 68, ../sass/components/_lists.scss */
 ul.icon-feature li i {
   color: #009CDE;
   font-size: 36px;
@@ -10852,44 +10847,48 @@ ul.icon-feature li i {
   display: inline-block;
   float: left;
 }
-/* line 81, ../sass/components/_lists.scss */
+/* line 76, ../sass/components/_lists.scss */
 ul.icon-feature li span {
   dispaly: inline-block;
   line-height: 40px;
 }
 
 /* line 3, ../sass/pages/_services.scss */
+#page-services .feature-img {
+  margin-top: 48px;
+}
+/* line 7, ../sass/pages/_services.scss */
 #page-services .content {
   margin-top: 16px;
 }
-/* line 6, ../sass/pages/_services.scss */
+/* line 10, ../sass/pages/_services.scss */
 #page-services .content ul {
   list-style-type: none;
 }
-/* line 11, ../sass/pages/_services.scss */
+/* line 15, ../sass/pages/_services.scss */
 #page-services .fixed {
   position: fixed;
   top: 0;
   z-index: 1;
 }
-/* line 20, ../sass/pages/_services.scss */
+/* line 24, ../sass/pages/_services.scss */
 #page-services #quick-navigation ul li a {
   color: #222730;
   border-radius: 0;
   border-bottom: solid 1px #efefef;
 }
-/* line 25, ../sass/pages/_services.scss */
+/* line 29, ../sass/pages/_services.scss */
 #page-services #quick-navigation ul li a:hover {
   background-color: transparent;
   color: #009CDE;
 }
-/* line 31, ../sass/pages/_services.scss */
+/* line 35, ../sass/pages/_services.scss */
 #page-services #quick-navigation ul li.active a {
   color: #009CDE;
   background-color: transparent;
   position: relative;
 }
-/* line 36, ../sass/pages/_services.scss */
+/* line 40, ../sass/pages/_services.scss */
 #page-services #quick-navigation ul li.active a::after {
   content: url("../img/right.svg");
   position: absolute;
@@ -10990,6 +10989,11 @@ ul.icon-feature li span {
 /* line 45, ../sass/pages/_heros.scss */
 .hero-storage {
   background-image: url("../img/ic_hero_storage.svg");
+}
+
+/* line 48, ../sass/pages/_heros.scss */
+.hero-anouncement {
+  background-image: url("../img/ic_hero_announcement.svg");
 }
 
 @font-face {
